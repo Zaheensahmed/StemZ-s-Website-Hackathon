@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content=""with=device-width, initial-scale="1.0">
+    <title>StemZ Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/logo.JPG"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#course">COURSE</a></li>
+                    <li><a href="#testimonials">TESTIMONIALS</a></li>
+                    <li><a href="#channel">CHANNEL</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> StemZ</h1>
+            <p> A channel for STEM tutorials</p>
+            <a href="#about" class="hero-btn"> About Us</a>
+        </div>
+    </section>
+    <section class="About" id="about">
+        <h1>
+            About Us
+        </h1>
+        <p> StemZ is a non-profit organization that teaches beginners Js, Raspberry Pi, and other STEM skills. We are now running a series on the introduction to JavaScript. In that series, we build games while discovering new properties. My goal is  to shortly cover Python, CSS, and HTML. </p>
+    </section>
+    <section class="course" id="course">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Microgreens</h3>
+                <p>
+                    In this course, we covered the journey of growing Microgreens. Young seedlings of palatable vegetables and herbs are known as microgreens. Microgreens may be picked and consumed a week to 10 days after the cotyledon — a portion of the embryo within the seed — leaves have formed, in contrast to bigger herbs and vegetables that take weeks or months to mature. Click on the image to learn more!
+                </p>
+                <button class="btn" onclick="location.href='https://youtube.com/playlist?list=PLODJWkqbylQpFMcKNNt_U3nvGbCI-RxCz';">
+                    <img src="images/microgreens.jpg" alt="microgreens">
+                </button>
+            </div>
+            <div class="course-col">
+                <h3> Intro Into Javascript</h3>
+                <p>
+                    In this course, we created games and projects while learning JavaScript. We used code.org game lab. Click on the image to learn more!
+                </p>
+                <button class="btn" onclick="location.href='https://youtube.com/playlist?list=PLODJWkqbylQpVC776plUo9bS2qp8HxWlk';">
+                    <img src="images/js.png" alt="js">
+                </button>
+            </div><div class="course-col">
+                <h3> How to set a Wireguard VPN Server Using a Raspberry Pi</h3>
+                <p>
+                    In this course, we created cool projects using a Raspberry Pi. Raspberry Pi is a relatively affordable Linux-running computer. The Raspberry Pi also offers a set of GPIO (general purpose input/output) pins that let you explore the Internet of Things (IoT) and control electronic components for physical computing. Click on the image to learn more!
+                </p>
+                <button class="btn" onclick="location.href='https://youtube.com/playlist?list=PLODJWkqbylQqG_txoL1mGrFIWw-HzxYtg';">
+                    <img src="images/pi2.webp" alt="pi">
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h1>What Subscribers Say About the Channel</h1>
+        <div class="row">
+            <div class="testimonial-col">
+                <div>
+                    <h1>Aarush C-</h1>
+                    <p> StemZ encourages us to try new things and pushes us to develop the abilities he taught us to a specific level of expertise. </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <div>
+                    <h1>Pranav A-</h1>
+                    <p>Stem Z is a friendly youtube channel teaching concepts anyone can learn in fantastic ways. I was impressed on my growth in raspberry pi just based on watching StemZ. StemZ is based only on youtube tutorials, not endorsing sponsors or subscribers. Would 100% recommend!!</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="channel">
+        <h1> Click the button to check out the channel!</h1>
+        <a href="https://www.youtube.com/channel/UC-_SHPjwNddkEnp4CpfpNtQ"class="hero-btn">CLICK HERE</a>
+    </section>
+
+    
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
